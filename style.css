@@ -1,304 +1,410 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 body
 {
-    font-family: 'Google Sans';
-    margin: 0;
-    padding:0;
-    overflow-x: hidden;
-    cursor: default;
-    height:100vh;
+  font-family: 'Google Sans';
+  margin: 0;
+  padding:0;
+  overflow-x: hidden;
+  cursor: default;
+  height:100vh;
 }
 table{
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 div{
-    transition: height 2s;
+  transition: height 2s;
+  min-width: 360px;
 }
 p {
-    font-size: 22px;
-    line-height: 1.5;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+  font-size: 22px;
+  line-height: 1.5;
+-webkit-text-size-adjust: none;
+text-size-adjust: none;
 }
+/* Desktop Styles (applied at breakpoint) */
+
+@media only screen and (min-width: 768px) {
+.desktop_only
+{
+  display: block !important;
+}
+.mobile_only
+{
+  display: none !important;
+}
+}
+
+@media only screen and (max-width: 767px) { 
+.mobile_only
+{
+  display: block !important;
+}
+.desktop_only
+{
+  display: none !important;
+}
+}
+
+
 .img-profile
 {
-    position:relative;
-    margin: auto;
-    display: block;
-    top: 15%;
-    width: 700px;
+  position:relative;
+  margin: auto;
+  display: block;
+  top: 15%;
+  width: 700px;
 }
 
 h1
 {
-    font-size: 70px;
-    font-style: bold;
-    line-height: 1.5;
+  font-size: 70px;
+  font-style: bold;
+  line-height: 1.5;
 }
 .hover-me:hover
 {
-    font-size: 73px;
-    transition: 0.3s;
+  font-size: 73px;
+  transition: 0.3s;
 }
 h4
 {
-    font-size: 26px;
-    line-height: 1.5;
+  font-size: 26px;
+  line-height: 1.5;
 }
 .convo-style
 {
-    background-color: #FFFFFF;
-    padding:24px;
-    width: 350px;
-    border-radius: 25px;
-    color:#828282;
+  background-color: #FFFFFF;
+  padding:24px;
+  width: 350px;
+  border-radius: 25px;
+  color:#828282;
 }
 
 
 .bumble-div
 {
-    background-image: url("https://ai7ru.wordpress.com/wp-content/uploads/2024/05/vector.png?resize=438%2C438");
-    background-repeat: no-repeat;
-    background-color: #FFC629;
-    height:90vh;
-    width: 100vw;
-    margin: auto;
+  background-image: url("https://ai7ru.wordpress.com/wp-content/uploads/2024/05/vector.png?resize=438%2C438");
+  background-repeat: no-repeat;
+  background-color: #FFC629;
+  height:90vh;
+  width: 100vw;
+  margin: auto;
 }
 
 .left-div
 {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 .right-div
 {
-    position:relative;
-    width: 50%;
-    float: right;
+  position:relative;
+  width: 50%;
+  float: right;
 }
 
 .hover-me:hover span {
-    display: none
+  display: none
 }
 
 .hover-me:hover:before
 {
-    content: "Ash, 21, QC";
-    transition: 0.1s;
+  content: "Ash, 21, QC";
+  transition: 0.1s;
 }
 
 .text-column
 {
-    height: 100vh;
+  height: 100vh;
 }
 .desktop-button
 {
-    text-align: center;
-    height:10vh;
-    width: 100vw;
+  text-align: center;
+  height:10vh;
+  width: 100vw;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-30px); } /* Bounce up at 40% */
-    60% { transform: translateY(-15px); } /* Slight bounce down at 60% */
-  }
-  
-  
-  .arrow-down {
-    width: 100px;
-    animation: bounce 2s linear infinite; /* Animation name, duration, timing, count */
-  }
-  .arrow-down:hover
-  {
-    cursor:pointer;
-    animation:none;
-  }
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); } /* Bounce up at 40% */
+  60% { transform: translateY(-15px); } /* Slight bounce down at 60% */
+}
+
+
+.arrow-down {
+  width: 100px;
+  animation: bounce 2s linear infinite; /* Animation name, duration, timing, count */
+}
+.arrow-down:hover
+{
+  cursor:pointer;
+  animation:none;
+}
 
 
 .page2-div
 {
-    background-repeat: no-repeat;
-    background-color: #0e0e0e;
-    height:90vh;
-    width: 100vw;
-    margin: auto;
-    color:#7289DA;
+  background-repeat: no-repeat;
+  background-color: #0e0e0e;
+  height:90vh;
+  width: 100vw;
+  margin: auto;
+  color:#7289DA;
 }
 
 .page3-div
 {
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    height:90vh;
-    width: 100vw;
-    margin: auto;
-    color:#000000;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  height:90vh;
+  width: 100vw;
+  margin: auto;
+  color:#000000;
 }
 
 tr td{
-    padding: 24px;
+  padding: 24px;
 }
 .box-layout
 {
-    border: 2px solid #7289DA;
-    padding: 24px;
-    border-radius: 25px;
+  border: 2px solid #7289DA;
+  padding: 24px;
+  border-radius: 25px;
 }
 .lazyload {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Add smooth transition */
-  }
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Add smooth transition */
+}
 
 .shine {
-    position: relative; /* Required for pseudo-element positioning */
-    overflow: hidden; /* Prevent overflowing content */
+  position: relative; /* Required for pseudo-element positioning */
+  overflow: hidden; /* Prevent overflowing content */
 }
 
 .shine::before {
-    content: "";
-    position: absolute;
-    inset: 0; /* Inset property for full coverage */
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
-    animation: shine 3s infinite; /* Animation details */
+  content: "";
+  position: absolute;
+  inset: 0; /* Inset property for full coverage */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+  animation: shine 3s infinite; /* Animation details */
 }
 
 @keyframes shine {
-    from {
-        transform: translateX(-100%); /* Start from left side */
-    }
-    to {
-        transform: translateX(100%); /* Move to the right side */
-        font-style: italic;
-    }
+  from {
+      transform: translateX(-100%); /* Start from left side */
+  }
+  to {
+      transform: translateX(100%); /* Move to the right side */
+      font-style: italic;
+  }
 }
 
 .fadeIn {
-    opacity: 0; /* Initially invisible */
-    animation: fadeIn ease-in 0.5s forwards; /* Animation properties */
+  opacity: 0; /* Initially invisible */
+  animation: fadeIn ease-in 0.5s forwards; /* Animation properties */
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .paper-plane-container {
-    position: relative; /* Needed for absolute positioning of the plane */
-  }
-  
-  .paper-plane {
-    position: absolute;
-    top: 450px; /* Adjust as needed for starting position */
-    left: 850px; /* Adjust as needed for starting position */
-    width: 30px;
-    animation: flyingPaperPlane 1s ease-in-out infinite;
-  }
-  
-  @keyframes flyingPaperPlane {
-        0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
-        40% { transform: translateX(-90px); } /* Bounce up at 40% */
-        60% { transform: translateX(-50px); } /* Slight bounce down at 60% */
-      }
+  position: relative; /* Needed for absolute positioning of the plane */
+}
 
-  .with-border tr td
-  {
-    height: 10px;
-    line-height: 0;
-    border: 1px solid pink;
-  }
-  .with-border td
-  {
-    width: 25px;
-  }
-  .with-border  td:hover
-  {
-    background-color: pink;
-  }
-  
+.paper-plane {
+  position: absolute;
+  top: 450px; /* Adjust as needed for starting position */
+  left: 850px; /* Adjust as needed for starting position */
+  width: 30px;
+  animation: flyingPaperPlane 1s ease-in-out infinite;
+}
 
-  .fillIt
-  {
-    background-color: pink;
-  }
-
-  #popup {
-    display: none; /* Hide the popup initially */
-    position: fixed; /* Ensures the popup stays on top of other content */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the popup */
-    width: 800px; /* Set desired width */
-    height: 300px; /* Set desired height */
-    background-color: rgb(255, 255, 255);
-    border: 1px solid #ccc;
-    padding: 10px;
-    z-index: 10; /* Ensure the popup appears above other elements */
-    font-family: "Indie Flower", cursive;
-    overflow-y: auto;
-    transition: displayPopUp 1s ease-in;
-    width: 800px; /* Set desired width */
-    height: 500px; /* Set desired height */
-    background-color: white;
-    padding: 20px;
-    border: 2px solid pink;
-    border-radius: 25px;
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/11/14/02/paper-2631126_1280.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    overflow-y: scroll;
-  }
-
-  @keyframes displayPopUp {
-    0%
-    {
-        opacity: 0;
+@keyframes flyingPaperPlane {
+      0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
+      40% { transform: translateX(-90px); } /* Bounce up at 40% */
+      60% { transform: translateX(-50px); } /* Slight bounce down at 60% */
     }
-    50%
-    {
-        opacity: 0.5;
-    }
-    100%
-    {
-        opacity: 1;
-    }
-  }
+
+.with-border tr td
+{
+  height: 10px;
+  line-height: 0;
+  border: 1px solid pink;
+}
+.with-border td
+{
+  width: 25px;
+}
+.with-border  td:hover
+{
+  background-color: pink;
+}
 
 
-  #openPopup
+.fillIt
+{
+  background-color: pink;
+}
+
+#popup {
+  display: none; /* Hide the popup initially */
+  position: fixed; /* Ensures the popup stays on top of other content */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  width: 800px; /* Set desired width */
+  height: 300px; /* Set desired height */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 10; /* Ensure the popup appears above other elements */
+  font-family: "Indie Flower", cursive;
+  overflow-y: auto;
+  transition: displayPopUp 1s ease-in;
+  width: 800px; /* Set desired width */
+  height: 500px; /* Set desired height */
+  background-color: white;
+  padding: 20px;
+  border: 2px solid pink;
+  border-radius: 25px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/11/14/02/paper-2631126_1280.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+@keyframes displayPopUp {
+  0%
   {
-    background-image: url("https://ai7ru.wordpress.com/wp-content/uploads/2024/05/fluent-emoji-high-contrast_love-letter.png?resize=438%2C438");
-    background-size: 100%;
-    background-repeat: no-repeat;
+      opacity: 0;
   }
-
-  #popup1
+  50%
   {
-    width: 800px; /* Set desired width */
-    height: 500px; /* Set desired height */
-    background-color: white;
-    padding: 20px;
-    border: 2px solid pink;
-    border-radius: 25px;
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/11/14/02/paper-2631126_1280.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    overflow-y: scroll;
+      opacity: 0.5;
   }
-
-  .img-gif
+  100%
   {
-    width: 400px;
-    margin:auto;
+      opacity: 1;
   }
+}
 
-  #closePopup
-  {
-    padding: 20px;
-    border: 2px solid pink;
-    border-radius: 10px;
-    background-color: white;
-  }
 
+#openPopup
+{
+  background-image: url("https://ai7ru.wordpress.com/wp-content/uploads/2024/05/fluent-emoji-high-contrast_love-letter.png?resize=438%2C438");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#popup1
+{
+  width: 800px; /* Set desired width */
+  height: 500px; /* Set desired height */
+  background-color: white;
+  padding: 20px;
+  border: 2px solid pink;
+  border-radius: 25px;
+  background-image: url("https://github.com/dimplenogales/ai7ru/blob/main/paper-2631126_1280.jpg?raw=true");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+.img-gif
+{
+  width: 400px;
+  margin:auto;
+}
+
+#closePopup
+{
+  padding: 20px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+
+/*for mobile pages*/
+
+.mob-button
+{
+  text-align: center;
+  height:10vh;
+  width: 100%;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); } /* Bounce up at 40% */
+  60% { transform: translateY(-15px); } /* Slight bounce down at 60% */
+}
+
+
+.arrow-down {
+  width: 100px;
+  animation: bounce 2s linear infinite; /* Animation name, duration, timing, count */
+}
+.arrow-down:hover
+{
+  cursor:pointer;
+  animation:none;
+}
+
+
+.img-profile-mob
+{
+width: 100%;
+}
+#page1-mob
+{
+margin: auto;
+}
+.bumble-div-mob
+{
+  background-image: url("https://ai7ru.wordpress.com/wp-content/uploads/2024/05/vector.png?resize=438%2C438");
+  background-repeat: no-repeat;
+  background-color: #FFC629;
+  height:90vh;
+  width: 100vw;
+  margin: auto;
+  padding: 40px 40px 0px 40px;
+}
+.bumble-div-mob h1:hover
+{
+font-size: 52px;
+}
+
+h1
+{
+font-size: 50px;
+line-height: 0.5;
+}
+
+.page2-div-mob
+{
+  background-repeat: no-repeat;
+  background-color: #0e0e0e;
+  width: 100vw;
+  height: 90vh;
+  margin: auto;
+  color:#7289DA;
+  padding: 0px 40px 0px 40px;
+}
+
+.box-layout-mob
+{
+width:100%;
+padding:20px;
+border-radius: 25px;
+border: 1px solid #7289DA;
+}
+.box-layout-mob p
+{
+font-size: 15px;
+}
