@@ -230,15 +230,25 @@ tr td{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the popup */
-    width: 500px; /* Set desired width */
+    width: 800px; /* Set desired width */
     height: 300px; /* Set desired height */
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 10; /* Ensure the popup appears above other elements */
     font-family: "Indie Flower", cursive;
     overflow-y: auto;
     transition: displayPopUp 1s ease-in;
+    width: 800px; /* Set desired width */
+    height: 500px; /* Set desired height */
+    background-color: white;
+    padding: 20px;
+    border: 2px solid pink;
+    border-radius: 25px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/11/14/02/paper-2631126_1280.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
   }
 
   @keyframes displayPopUp {
@@ -263,3 +273,32 @@ tr td{
     background-size: 100%;
     background-repeat: no-repeat;
   }
+
+  #popup1
+  {
+    width: 800px; /* Set desired width */
+    height: 500px; /* Set desired height */
+    background-color: white;
+    padding: 20px;
+    border: 2px solid pink;
+    border-radius: 25px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/11/14/02/paper-2631126_1280.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+  }
+
+  .img-gif
+  {
+    width: 400px;
+    margin:auto;
+  }
+
+  #closePopup
+  {
+    padding: 20px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    background-color: white;
+  }
+
