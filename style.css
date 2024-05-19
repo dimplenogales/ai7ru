@@ -359,7 +359,7 @@ tr td{
 
 .img-profile-mob
 {
-width: 100%;
+width: 80%;
 }
 #page1-mob
 {
@@ -373,7 +373,6 @@ margin: auto;
   height:90vh;
   width: 100vw;
   margin: auto;
-  padding: 40px 40px 0px 40px;
 }
 .bumble-div-mob h1:hover
 {
@@ -394,17 +393,26 @@ line-height: 0.5;
   height: 90vh;
   margin: auto;
   color:#7289DA;
-  padding: 0px 40px 0px 40px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .box-layout-mob
 {
-width:100%;
-padding:20px;
 border-radius: 25px;
 border: 1px solid #7289DA;
+height: 350px;
+overflow-y: scroll;
 }
 .box-layout-mob p
 {
 font-size: 15px;
+padding:10px;
+}
+.page2-div-mob h1
+{
+font-size: 36 px;
+padding:20px;
+line-height: 0.5;
+padding: 20px;
 }
